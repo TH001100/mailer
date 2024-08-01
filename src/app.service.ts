@@ -14,7 +14,7 @@ export class AppService {
           to: receiversEmail,
           subject: subject,
           text: emailBody,
-          reply_to: reply_to === undefined ? "tryhard11220@gmail.com" : reply_to
+          reply_to: reply_to === undefined ? "no_reply" : reply_to
         }
         console.log(mailOptions)
         const sent = await resend.emails.send(mailOptions)
